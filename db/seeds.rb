@@ -13,3 +13,14 @@ Item.all.each do |item|
   item.save
   counter += 1
 end
+
+User.create(
+	email: "testy.strickler@gmail.com",
+	password: "testtest"
+	)
+
+
+Cart.create(
+  user_id: 2,
+  line_item_id: 1
+  )

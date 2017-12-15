@@ -1,3 +1,12 @@
+<h2>Shop by Category: </h2>
+
 <% @categories.each do |category| %>
-  <%= @category.title %>
-<% end %>
+
+<ul> 
+	<li><h4><%=link_to category.title, category_path(category)%></h4></li>
+</ul>
+
+<%end%>
+
+
+
